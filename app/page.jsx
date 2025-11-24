@@ -11,7 +11,7 @@ export default function Home() {
     "https://lesson-bot-node.onrender.com/api/products",
     fetcher
   );
-
+  
   if (error) return <div>failed to load</div>;
   if (isLoading) return <Container>loading...</Container>;
   return (
@@ -19,7 +19,7 @@ export default function Home() {
       <App_Nav />
       <Container size={"xl"} py={"md"}>
         <Card_List data={data} />
-      </Container>
+      </Container>  
     </>
   );
 }

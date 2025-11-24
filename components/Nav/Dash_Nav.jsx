@@ -11,6 +11,8 @@ const Dash_Nav = () => {
         </Link>
         <Link href={`/dashboard/add`}>
           <Button variant="light">Mahsulot qo'shish</Button>
+        </Link><Link href={`/dashboard/category-add`}>
+          <Button variant="light">Kategoriya qo'shish</Button>
         </Link>
       </Flex>
     </>
