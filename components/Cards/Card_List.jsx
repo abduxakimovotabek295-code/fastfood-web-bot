@@ -29,9 +29,7 @@ const Card_List = ({ data }) => {
                 </Text>
 
                 <Group mt={"md"} grow gap={"xs"}>
-                  <Button color="red" size="compact-xs">
-                    Remove
-                  </Button>
+                  
                   <Button color="blue" size="compact-xs">
                     Add
                   </Button>
