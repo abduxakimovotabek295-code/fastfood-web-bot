@@ -8,10 +8,10 @@ const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 export default function Home() {
   const { data, error, isLoading } = useSWR(
-    "https://lesson-bot-node.onrender.com/api/products",
+    "https://web-bot-node-lqg9.onrender.com/api/products",
     fetcher
   );
-  
+
   if (error) return <div>failed to load</div>;
   if (isLoading) return <Container>loading...</Container>;
   return (
@@ -19,7 +19,7 @@ export default function Home() {
       <App_Nav />
       <Container size={"xl"} py={"md"}>
         <Card_List data={data} />
-      </Container>  
+      </Container>
     </>
   );
 }
