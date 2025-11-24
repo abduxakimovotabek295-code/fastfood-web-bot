@@ -29,14 +29,13 @@ const Card_List = ({ data }) => {
                 </Text>
 
                 <Group mt={"md"} grow gap={"xs"}>
-                  
                   <Button color="blue" size="compact-xs">
                     Add
                   </Button>
                 </Group>
               </Card>
             </Grid.Col>
-          ); 
+          );
         })}
       </Grid>
     </>
